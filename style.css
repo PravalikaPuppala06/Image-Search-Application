@@ -1,0 +1,108 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+
+    }
+    h1{
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 2px ;
+        font-style: oblique;
+        /* font-size: 20px; */
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px 30px 0px;
+    }
+    #search-input{
+        width: 60%;
+        max-width: 350px;
+        padding: 10px 20px;
+        border: none;
+        box-shadow:0 0 6px rgb(135, 130, 130);
+        border-radius: 5px;
+        font-size: 15px;
+        color: #333;
+        outline: none;
+    }
+    #search-button{
+        padding: 10px 20px;
+        background-color: teal;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .search-results{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .search-result{
+        margin-bottom: 60px;
+        width: 30%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow:0 0 6px rgb(135, 130, 130);
+        overflow: hidden;   
+    }
+    .search-result img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: opacity 0.2s ease-in-out;
+    }
+    .search-result:hover img{
+        opacity: 0.8; 
+    }
+    .search-result a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+        display: block;
+        padding: 10px;
+        text-transform: capitalize;
+    }
+    #show-more-button{
+        text-transform: capitalize;
+        background-color:#008cba;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+        cursor: pointer;
+        display: none;
+    }
+    .search-results{
+            padding: 15px;
+        }
+    @media screen and (max-width:780px) {
+        .search-results{
+            padding: 15px;
+        }
+        .search-result{
+            width:45%;
+        }
+        
+    }
+    @media screen and (max-width:480px) {
+        .search-result{
+            width:100%;
+        }
+        
+    }
+</style>
